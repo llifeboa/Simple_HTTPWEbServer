@@ -2,40 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="main.css">
-	<title>Document</title>
+	<title>Panel</title>
+	<link rel="stylesheet" href="./main.css">
 </head>
 <body>
-	<div class="some">
-		<div class="left_side">
-			<ul>
-				<li><a href="#">First</a></li>
-				<li><a href="#">Second</a></li>
-				<li><a href="#">Third</a></li>
-			</ul>
-		</div>
-		<div class="content">
-			<div class="black"></div>
-			<h1>GRUB HUB</h1>
-		</div>
-		<div class="clear"></div>
+	<div class="container">
+		<h1>Panel</h1>
+		<label for="volume">Volume</label>
+		<input class=
+		"volume" name="volume" type="range" min="0" max="100" >
 	</div>
-	<script>
-	var xhr = new XMLHttpRequest();
-	function getUpdate()
-	{
-		xhr.open('GET', '/update', true);
-		xhr.onreadystatechange = ()=>{
-			if (xhr.readyState == 4 && xhr.status == 0)
-			{
-				location.reload();
-			}
-		}
-		xhr.send(null);
-	}
-	setInterval(getUpdate, 1000);
-	</script>
+	<script src="./index.js"></script>
 </body>
 </html>
