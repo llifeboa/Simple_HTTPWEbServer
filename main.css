@@ -1,8 +1,10 @@
-.clear {clear: both;}
-.some {position: relative;}
-.some .left_side {float: left; position: relative; overflow: hidden; width: 200px;margin-right: 20px;background-color: blue;padding: 10px 10px 0px 20px;box-sizing: border-box;}
-.some .left_side ul {padding:0px;margin: 0px;}
-.some .left_side li {display: block; margin-bottom: 10px;}
-.some .left_side li a{text-decoration: none; color: #fff; font-size: 18px;line-height: 21px;}
-.some .content {position: relative; overflow: hidden; background-color: #ccc; text-align: center;}
-.some .content .black {width: 40px; height: 40px; position: absolute; left:50%;margin-left: px;top:50%; margin-top: -20px; background: #000; opacity: .5;}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+} 

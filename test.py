@@ -1,3 +1,3 @@
 import os, time
 
-print(time.ctime(os.path.getmtime("./main.css")))
+print(time.ctime(os.path.getmtime("./index.html")))
